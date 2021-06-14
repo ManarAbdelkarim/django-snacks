@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<h1>Home Page</h1>
+{% endblock content%}
+
+
+<p> I didn't know what to put here so i used google's url as a place holder</p>
+
+
+    
+        {% block data %}
+        <div>
+            <p> I didn't know what to put here so i used google's url as a place holder</p>
+            {% for i in all_data %}
+            <p>{{i.title}}</p>
+            <h1>{{i.title}}</h1> 
+            <p>I am inside</p>
+            <h1> {{i.user}} </h1>
+            <p> {{i.time}} </p>
+            <img src="{{i.image}}" alt="">
+            <p>{{i.description}}</p>
+            
+            {% endfor %}
+            <p>{{ all_data}}</p>
+       
+           
+        </div>
+        <p> gosh , I can't show the data from the database here .. gonna try later ☹</p>
+        {% endblock data %}
+       
+
+
+  
